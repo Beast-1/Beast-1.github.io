@@ -17,7 +17,8 @@
   display: flex;
   justify-content: space-between;
   padding-inline: var(--container-pad);
-  font-size: var(--fs-small);
+  font-family: var(--font-mono);
+  font-size: 0.7rem;
   pointer-events: none;
 }
 
@@ -136,15 +137,14 @@
 
 .hero-photo-caption {
   position: absolute;
-  left: var(--space-3);
-  bottom: var(--space-3);
-  right: var(--space-3);
+  left: 0;
+  bottom: 0;
+  right: 0;
   padding: var(--space-3);
-  border-radius: var(--radius-md);
-  background: color-mix(in srgb, var(--color-bg) 70%, transparent);
-  backdrop-filter: blur(8px);
-  border: 1px solid var(--color-border-strong);
-  font-size: var(--fs-small);
+  background: var(--color-bg);
+  border-top: 1px solid var(--color-border-strong);
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
   color: var(--color-text);
 }
 
@@ -175,6 +175,7 @@
 }
 
 .hero-stat-label {
+  font-family: var(--font-mono);
   font-size: 0.7rem;
   color: var(--color-text-dim);
   text-transform: uppercase;

@@ -17,6 +17,7 @@
   --font-display: 'Anton', sans-serif;
   --font-body: 'Manrope', sans-serif;
   --font-script: 'Caveat', cursive;
+  --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
   --fs-wordmark: clamp(4rem, 18vw, 14rem);
   --fs-hero-title: clamp(2.5rem, 7vw, 5.5rem);
   --fs-h2: clamp(2rem, 5vw, 3.25rem);
@@ -36,12 +37,11 @@
   --space-7: 5rem;
   --space-8: 8rem;
 
-  /* Shape / shadow / motion */
-  --radius-sm: 4px;
-  --radius-md: 8px;
-  --radius-lg: 16px;
-  --radius-pill: 999px;
-  --shadow-card: 0 20px 60px -20px rgba(0, 0, 0, 0.5);
+  /* Shape / shadow / motion — flat, sharp, print-like */
+  --radius-sm: 0;
+  --radius-md: 0;
+  --radius-lg: 0;
+  --shadow-card: none;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
   --duration-fast: 150ms;
   --duration-base: 300ms;
@@ -66,5 +66,5 @@
   --color-accent-soft: rgba(194, 42, 32, 0.1);
   --color-border: rgba(0, 0, 0, 0.08);
   --color-border-strong: rgba(0, 0, 0, 0.16);
-  --shadow-card: 0 20px 60px -20px rgba(0, 0, 0, 0.15);
+  --shadow-card: none;
 }

@@ -2,7 +2,7 @@ import { Mail, MapPin, MessageCircle, Sparkle } from 'lucide-react'
 import { profile } from '../../data/portfolio'
 import { RevealOnScroll } from '../ui/RevealOnScroll'
 import { LinkedinIcon } from '../ui/BrandIcons'
-import { LaptopMockup } from '../ui/LaptopMockup'
+import { CodeWindow } from '../ui/CodeWindow'
 import './Contact.css'
 
 export function Contact() {
@@ -48,7 +48,7 @@ export function Contact() {
         </RevealOnScroll>
 
         <RevealOnScroll delay={0.15}>
-          <LaptopMockup />
+          <CodeWindow />
         </RevealOnScroll>
       </div>
 

@@ -1,11 +1,11 @@
 .skill-pill {
   display: inline-flex;
   align-items: center;
-  padding: var(--space-2) var(--space-4);
-  border-radius: var(--radius-pill);
+  padding: var(--space-2) var(--space-3);
   border: 1px solid var(--color-border-strong);
-  background: var(--color-bg-elevated);
-  font-size: var(--fs-small);
+  background: transparent;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
   color: var(--color-text-muted);
   transition: border-color var(--duration-fast) var(--ease-out), color var(--duration-fast) var(--ease-out);
 }
