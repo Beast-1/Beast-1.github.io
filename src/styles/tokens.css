@@ -6,15 +6,17 @@
   --color-text: #f5f2ef;
   --color-text-muted: #9a9a9a;
   --color-text-dim: #666666;
-  --color-accent: #b0222a;
-  --color-accent-bright: #d02830;
-  --color-accent-soft: rgba(176, 34, 42, 0.14);
+  --color-accent: #e2342a;
+  --color-accent-bright: #ff4b3e;
+  --color-accent-dim: #8f1f1a;
+  --color-accent-soft: rgba(226, 52, 42, 0.14);
   --color-border: rgba(255, 255, 255, 0.08);
   --color-border-strong: rgba(255, 255, 255, 0.16);
 
   /* Type */
   --font-display: 'Anton', sans-serif;
   --font-body: 'Manrope', sans-serif;
+  --font-script: 'Caveat', cursive;
   --fs-wordmark: clamp(4rem, 18vw, 14rem);
   --fs-hero-title: clamp(2.5rem, 7vw, 5.5rem);
   --fs-h2: clamp(2rem, 5vw, 3.25rem);
@@ -58,9 +60,10 @@
   --color-text: #141414;
   --color-text-muted: #55524f;
   --color-text-dim: #8a8783;
-  --color-accent: #96181f;
-  --color-accent-bright: #b0222a;
-  --color-accent-soft: rgba(150, 24, 31, 0.1);
+  --color-accent: #c22a20;
+  --color-accent-bright: #e2342a;
+  --color-accent-dim: #8f1f1a;
+  --color-accent-soft: rgba(194, 42, 32, 0.1);
   --color-border: rgba(0, 0, 0, 0.08);
   --color-border-strong: rgba(0, 0, 0, 0.16);
   --shadow-card: 0 20px 60px -20px rgba(0, 0, 0, 0.15);

@@ -5,7 +5,7 @@ export const CONTACT_EMAIL = 'darpandahal111@gmail.com';
 export const YEARS_EXPERIENCE = '2+';
 export const RESUME_PATH = '/resume.pdf';
 export const HERO_PHOTO = '/images/placeholder-portrait.svg';
-export const HERO_WORDMARK = 'DEVELOPER';
+export const HERO_WORDMARK = 'PORTFOLIO';
 
 export const profile = {
   name: 'Darpan Dahal',

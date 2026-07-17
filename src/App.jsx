@@ -3,11 +3,8 @@ import { MotionConfig } from 'framer-motion'
 import { Navbar } from './components/layout/Navbar'
 import { CommandPalette } from './components/CommandPalette'
 import { Hero } from './components/sections/Hero'
-import { StatStrip } from './components/sections/StatStrip'
-import { EducationSkills } from './components/sections/EducationSkills'
+import { AboutGrid } from './components/sections/AboutGrid'
 import { Projects } from './components/sections/Projects'
-import { HowIBuild } from './components/sections/HowIBuild'
-import { Philosophy } from './components/sections/Philosophy'
 import { Contact } from './components/sections/Contact'
 import { useTheme } from './hooks/useTheme'
 
@@ -31,11 +28,8 @@ function App() {
       <Navbar theme={theme} onToggleTheme={toggle} onOpenPalette={() => setPaletteOpen(true)} />
       <main>
         <Hero />
-        <StatStrip />
-        <EducationSkills />
+        <AboutGrid />
         <Projects />
-        <HowIBuild />
-        <Philosophy />
         <Contact />
       </main>
       <CommandPalette
