@@ -1,0 +1,14 @@
+<svg width="280" height="280" viewBox="0 0 280 280" xmlns="http://www.w3.org/2000/svg">
+  <rect width="280" height="280" fill="#161616" />
+  <circle cx="140" cy="140" r="138" fill="none" stroke="#2a2a2a" stroke-width="2" />
+  <text
+    x="50%"
+    y="53%"
+    text-anchor="middle"
+    dominant-baseline="middle"
+    font-family="Arial, sans-serif"
+    font-weight="700"
+    font-size="88"
+    fill="#b0222a"
+  >DD</text>
+</svg>

@@ -1,0 +1,56 @@
+.edu-skills-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-8);
+}
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+
+.cert-item {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  padding-block: var(--space-4);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.cert-title {
+  font-weight: 600;
+}
+
+.cert-issuer {
+  font-size: var(--fs-small);
+  color: var(--color-text-muted);
+}
+
+.skill-groups {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.skill-group-label {
+  display: block;
+  font-size: var(--fs-small);
+  color: var(--color-text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  margin-bottom: var(--space-3);
+}
+
+.skill-group-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+@media (max-width: 860px) {
+  .edu-skills-grid {
+    grid-template-columns: 1fr;
+    gap: var(--space-6);
+  }
+}
