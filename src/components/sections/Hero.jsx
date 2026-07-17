@@ -27,7 +27,7 @@ export function Hero() {
       </div>
 
       <div className="container hero-main">
-        <div className="hero-content">
+        <div className="hero-intro">
           <RevealOnScroll y={16}>
             <p className="hero-script">Hello, I&apos;m</p>
           </RevealOnScroll>
@@ -70,37 +70,30 @@ export function Hero() {
           </RevealOnScroll>
         </div>
 
-        <div className="hero-side">
-          <RevealOnScroll delay={0.1} y={0}>
-            <div className="hero-photo-wrap">
-              <img
-                className="hero-photo"
-                src={HERO_PHOTO}
-                alt={profile.name}
-                width={340}
-                height={420}
-                loading="eager"
-                fetchPriority="high"
-              />
-              <div className="hero-photo-caption">
-                Turning ideas into working software.
-              </div>
-            </div>
-          </RevealOnScroll>
-
-          <RevealOnScroll delay={0.3} y={0}>
-            <div className="hero-stats">
-              {heroStats.map((stat) => (
-                <div className="hero-stat" key={stat.label}>
-                  <span className="hero-stat-value">
-                    <AnimatedCounter value={stat.value} />
-                  </span>
-                  <span className="hero-stat-label">{stat.label}</span>
-                </div>
-              ))}
-            </div>
-          </RevealOnScroll>
+        <div className="hero-photo-col">
+          <img
+            className="hero-photo"
+            src={HERO_PHOTO}
+            alt={profile.name}
+            width={210}
+            height={377}
+            loading="eager"
+            fetchPriority="high"
+          />
         </div>
+
+        <RevealOnScroll delay={0.3} y={0}>
+          <div className="hero-stats">
+            {heroStats.map((stat) => (
+              <div className="hero-stat" key={stat.label}>
+                <span className="hero-stat-value">
+                  <AnimatedCounter value={stat.value} />
+                </span>
+                <span className="hero-stat-label">{stat.label}</span>
+              </div>
+            ))}
+          </div>
+        </RevealOnScroll>
       </div>
     </section>
   )

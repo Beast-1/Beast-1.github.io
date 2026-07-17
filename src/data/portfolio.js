@@ -4,7 +4,7 @@ export const PHONE_NUMBER = ''; // digits only, intl format (e.g. "9779800000000
 export const CONTACT_EMAIL = 'darpandahal111@gmail.com';
 export const YEARS_EXPERIENCE = '2+';
 export const RESUME_PATH = '/resume.pdf';
-export const HERO_PHOTO = '/images/placeholder-portrait.svg';
+export const HERO_PHOTO = '/images/darpan.png';
 export const HERO_WORDMARK = 'PORTFOLIO';
 
 export const profile = {
