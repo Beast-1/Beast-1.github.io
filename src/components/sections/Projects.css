@@ -10,8 +10,10 @@
   display: inline-flex;
   align-items: center;
   gap: var(--space-2);
-  font-size: var(--fs-small);
-  font-weight: 600;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
   color: var(--color-text-muted);
   padding-bottom: var(--space-5);
 }
@@ -20,11 +22,69 @@
   color: var(--color-accent-bright);
 }
 
-.projects-grid {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: var(--space-4);
+/* Slider */
+.projects-slider {
+  position: relative;
   margin-top: var(--space-2);
+}
+
+.projects-track {
+  display: flex;
+  column-gap: var(--space-4);
+  overflow-x: auto;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding-bottom: var(--space-2);
+}
+
+.projects-track::-webkit-scrollbar {
+  display: none;
+}
+
+.project-slide {
+  flex: 0 0 clamp(260px, 30%, 340px);
+  scroll-snap-align: start;
+}
+
+.slider-arrow {
+  position: absolute;
+  top: 38%;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 48px;
+  height: 48px;
+  border: 1px solid var(--color-border-strong);
+  background: var(--color-bg);
+  color: var(--color-text);
+  transition: color var(--duration-fast) var(--ease-out), border-color var(--duration-fast) var(--ease-out),
+    opacity var(--duration-fast) var(--ease-out);
+}
+
+.slider-arrow-prev {
+  left: calc(var(--space-4) * -1);
+}
+
+.slider-arrow-next {
+  right: calc(var(--space-4) * -1);
+}
+
+.slider-arrow:hover:not(:disabled) {
+  color: var(--color-accent-bright);
+  border-color: var(--color-accent-bright);
+}
+
+.slider-arrow:disabled {
+  opacity: 0.25;
+  cursor: not-allowed;
+}
+
+.projects-loadmore {
+  display: flex;
+  justify-content: center;
+  margin-top: var(--space-5);
 }
 
 .other-work {
@@ -55,13 +115,21 @@
 }
 
 @media (max-width: 960px) {
-  .projects-grid {
-    grid-template-columns: repeat(2, 1fr);
+  .project-slide {
+    flex-basis: clamp(260px, 44%, 320px);
+  }
+
+  .slider-arrow-prev {
+    left: 0;
+  }
+
+  .slider-arrow-next {
+    right: 0;
   }
 }
 
 @media (max-width: 620px) {
-  .projects-grid {
-    grid-template-columns: 1fr;
+  .project-slide {
+    flex-basis: 82%;
   }
 }

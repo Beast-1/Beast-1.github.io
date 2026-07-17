@@ -7,6 +7,7 @@
 
 .contact-title {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: var(--fs-h2);
   margin-bottom: var(--space-4);
 }

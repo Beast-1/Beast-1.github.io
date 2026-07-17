@@ -14,8 +14,8 @@
   --color-border-strong: rgba(255, 255, 255, 0.16);
 
   /* Type */
-  --font-display: 'Anton', sans-serif;
-  --font-body: 'Manrope', sans-serif;
+  --font-display: Helvetica, 'Helvetica Neue', Arial, sans-serif;
+  --font-body: Georgia, 'Times New Roman', serif;
   --font-script: 'Caveat', cursive;
   --font-mono: 'JetBrains Mono', ui-monospace, 'Cascadia Code', Consolas, monospace;
   --fs-wordmark: clamp(4rem, 18vw, 14rem);

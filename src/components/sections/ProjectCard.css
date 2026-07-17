@@ -28,6 +28,7 @@
   align-items: center;
   justify-content: center;
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: 9rem;
   line-height: 1;
   color: transparent;
@@ -74,6 +75,7 @@
 
 .project-title {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: 1.4rem;
 }
 

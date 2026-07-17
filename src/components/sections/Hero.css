@@ -74,6 +74,7 @@
 
 .hero-name {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: var(--fs-hero-title);
   letter-spacing: -0.01em;
   line-height: 0.98;
@@ -170,6 +171,7 @@
 
 .hero-stat-value {
   font-family: var(--font-display);
+  font-weight: 700;
   font-size: 1.9rem;
   color: var(--color-accent-bright);
 }
