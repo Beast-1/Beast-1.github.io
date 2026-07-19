@@ -12,8 +12,8 @@ export function AboutGrid() {
       <div className="container about-grid-columns">
         <RevealOnScroll>
           <div className="about-col">
-            <p className="eyebrow">01 · Education</p>
-            <h2 className="about-col-title">Education &amp; Skills</h2>
+            <p className="eyebrow">01 · Certifications</p>
+            <h2 className="about-col-title">Certifications &amp; Skills</h2>
 
             <ul className="cert-list">
               {certifications.map((cert) => (
