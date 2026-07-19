@@ -7,6 +7,11 @@ import { AnimatedCounter } from '../ui/AnimatedCounter'
 import { useGithubStats } from '../../hooks/useGithubStats'
 import './Hero.css'
 
+function joinRoles(roles) {
+  if (roles.length < 2) return roles.join('')
+  return `${roles.slice(0, -1).join(', ')} & ${roles[roles.length - 1]}`
+}
+
 export function Hero() {
   const publicRepos = useGithubStats()
   const heroStats = publicRepos ? [...stats, { label: 'Public Repos', value: publicRepos }] : stats
@@ -37,7 +42,7 @@ export function Hero() {
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.1}>
-            <p className="hero-roles">{profile.roles.join(' & ')}</p>
+            <p className="hero-roles">{joinRoles(profile.roles)}</p>
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.15}>
@@ -74,7 +79,7 @@ export function Hero() {
           <img
             className="hero-photo"
             src={HERO_PHOTO}
-            alt={profile.name}
+            alt={`Portrait of ${profile.name}`}
             width={210}
             height={377}
             loading="eager"

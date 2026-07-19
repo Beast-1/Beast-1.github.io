@@ -125,11 +125,11 @@
 }
 
 .hero-photo {
-  width: clamp(210px, 24vw, 290px);
+  width: clamp(170px, 19vw, 210px);
   height: auto;
   object-fit: contain;
   /* rise up so the head tucks beneath the wordmark */
-  margin-top: clamp(-140px, -12vw, -80px);
+  margin-top: clamp(-120px, -10vw, -70px);
   filter: drop-shadow(0 24px 40px rgba(0, 0, 0, 0.55));
 }
 
