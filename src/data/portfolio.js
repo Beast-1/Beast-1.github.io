@@ -2,10 +2,8 @@
 export const GITHUB_USERNAME = 'Beast-1';
 export const PHONE_NUMBER = ''; // digits only, intl format (e.g. "9779800000000"), fill in for WhatsApp link
 export const CONTACT_EMAIL = 'darpandahal111@gmail.com';
-export const YEARS_EXPERIENCE = '2+';
 export const RESUME_PATH = '/resume.pdf';
 export const HERO_PHOTO = '/images/darpan.png';
-export const HERO_WORDMARK = 'PORTFOLIO';
 
 export const profile = {
   name: 'Darpan Dahal',
@@ -17,12 +15,6 @@ export const profile = {
   whatsapp: PHONE_NUMBER ? `https://wa.me/${PHONE_NUMBER}` : '',
   tagline: 'I build AI-driven systems and web products, from the model to the interface.',
 }
-
-export const stats = [
-  { label: 'Flagship Projects', value: 4 },
-  { label: 'Years Building', value: YEARS_EXPERIENCE },
-  { label: 'Certifications', value: 2 },
-]
 
 export const skills = {
   Languages: ['Python', 'JavaScript'],
@@ -87,31 +79,26 @@ export const processSteps = [
   {
     number: '01',
     title: 'Understand',
-    icon: 'Search',
     description: 'Clarify the real problem before writing a line of code.',
   },
   {
     number: '02',
     title: 'Prototype',
-    icon: 'FlaskConical',
     description: 'Fast, disposable proofs of concept to test the idea.',
   },
   {
     number: '03',
     title: 'Build & Iterate',
-    icon: 'Hammer',
     description: 'Turn the prototype into something solid, refined in loops.',
   },
   {
     number: '04',
     title: 'Test',
-    icon: 'CheckCircle2',
     description: 'Break it on purpose before someone else does.',
   },
   {
     number: '05',
     title: 'Ship',
-    icon: 'Rocket',
     description: 'Deploy, monitor, and keep improving in production.',
   },
 ]

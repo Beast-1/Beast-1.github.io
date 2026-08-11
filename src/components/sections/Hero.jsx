@@ -1,10 +1,7 @@
-import { Mail, Sparkle } from 'lucide-react'
-import { HERO_PHOTO, HERO_WORDMARK, profile, stats } from '../../data/portfolio'
-import { WordmarkBackground } from '../ui/WordmarkBackground'
+import { Mail } from 'lucide-react'
+import { HERO_PHOTO, profile } from '../../data/portfolio'
 import { RevealOnScroll } from '../ui/RevealOnScroll'
 import { GithubIcon, LinkedinIcon } from '../ui/BrandIcons'
-import { AnimatedCounter } from '../ui/AnimatedCounter'
-import { useGithubStats } from '../../hooks/useGithubStats'
 import './Hero.css'
 
 function joinRoles(roles) {
@@ -13,28 +10,14 @@ function joinRoles(roles) {
 }
 
 export function Hero() {
-  const publicRepos = useGithubStats()
-  const heroStats = publicRepos ? [...stats, { label: 'Public Repos', value: publicRepos }] : stats
-
   return (
     <section id="top" className="hero">
-      <WordmarkBackground word={HERO_WORDMARK} />
-
-      <div className="hero-top-meta">
-        <div className="hero-meta-left">
-          <span>{profile.roles[0]}</span>
-          <span>{profile.roles[1] ?? profile.roles[0]}</span>
-        </div>
-        <div className="hero-meta-right">
-          <Sparkle size={14} />
-          <span>Available for work</span>
-        </div>
-      </div>
-
       <div className="container hero-main">
         <div className="hero-intro">
           <RevealOnScroll y={16}>
-            <p className="hero-script">Hello, I&apos;m</p>
+            <p className="eyebrow">
+              {profile.roles[0]} · {profile.location}
+            </p>
           </RevealOnScroll>
 
           <RevealOnScroll delay={0.05}>
@@ -75,28 +58,17 @@ export function Hero() {
           </RevealOnScroll>
         </div>
 
-        <div className="hero-photo-col">
-          <img
-            className="hero-photo"
-            src={HERO_PHOTO}
-            alt={`Portrait of ${profile.name}`}
-            width={210}
-            height={377}
-            loading="eager"
-            fetchPriority="high"
-          />
-        </div>
-
-        <RevealOnScroll delay={0.3} y={0}>
-          <div className="hero-stats">
-            {heroStats.map((stat) => (
-              <div className="hero-stat" key={stat.label}>
-                <span className="hero-stat-value">
-                  <AnimatedCounter value={stat.value} />
-                </span>
-                <span className="hero-stat-label">{stat.label}</span>
-              </div>
-            ))}
+        <RevealOnScroll delay={0.15} className="hero-photo-col">
+          <div className="hero-photo-frame">
+            <img
+              className="hero-photo"
+              src={HERO_PHOTO}
+              alt={`Portrait of ${profile.name}`}
+              width={340}
+              height={420}
+              loading="eager"
+              fetchPriority="high"
+            />
           </div>
         </RevealOnScroll>
       </div>

@@ -1,10 +1,7 @@
-import { CheckCircle2, FlaskConical, Hammer, Rocket, Search } from 'lucide-react'
 import { certifications, philosophy, processSteps, profile, skills } from '../../data/portfolio'
 import { SkillPill } from '../ui/SkillPill'
 import { RevealOnScroll } from '../ui/RevealOnScroll'
 import './AboutGrid.css'
-
-const ICONS = { Search, FlaskConical, Hammer, CheckCircle2, Rocket }
 
 export function AboutGrid() {
   return (
@@ -12,7 +9,7 @@ export function AboutGrid() {
       <div className="container about-grid-columns">
         <RevealOnScroll>
           <div className="about-col">
-            <p className="eyebrow">01 · Certifications</p>
+            <p className="eyebrow">Certifications</p>
             <h2 className="about-col-title">Certifications &amp; Skills</h2>
 
             <ul className="cert-list">
@@ -41,26 +38,19 @@ export function AboutGrid() {
 
         <RevealOnScroll delay={0.1}>
           <div id="process" className="about-col">
-            <p className="eyebrow">02 · Process</p>
+            <p className="eyebrow">Process</p>
             <h2 className="about-col-title">How I Build</h2>
 
             <ol className="process-list">
-              {processSteps.map((step) => {
-                const Icon = ICONS[step.icon]
-                return (
-                  <li key={step.number} className="process-item">
-                    <span className="process-icon">
-                      <Icon size={16} />
-                    </span>
-                    <div>
-                      <span className="process-item-title">
-                        {step.number} · {step.title}
-                      </span>
-                      <p className="process-item-desc">{step.description}</p>
-                    </div>
-                  </li>
-                )
-              })}
+              {processSteps.map((step) => (
+                <li key={step.number} className="process-item">
+                  <span className="process-number">{step.number}</span>
+                  <div>
+                    <span className="process-item-title">{step.title}</span>
+                    <p className="process-item-desc">{step.description}</p>
+                  </div>
+                </li>
+              ))}
             </ol>
           </div>
         </RevealOnScroll>

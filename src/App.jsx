@@ -1,7 +1,5 @@
-import { useEffect, useState } from 'react'
 import { MotionConfig } from 'framer-motion'
 import { Navbar } from './components/layout/Navbar'
-import { CommandPalette } from './components/CommandPalette'
 import { Hero } from './components/sections/Hero'
 import { AboutGrid } from './components/sections/AboutGrid'
 import { Projects } from './components/sections/Projects'
@@ -10,34 +8,16 @@ import { useTheme } from './hooks/useTheme'
 
 function App() {
   const { theme, toggle } = useTheme()
-  const [paletteOpen, setPaletteOpen] = useState(false)
-
-  useEffect(() => {
-    function handleKeyDown(e) {
-      if ((e.metaKey || e.ctrlKey) && e.key.toLowerCase() === 'k') {
-        e.preventDefault()
-        setPaletteOpen((v) => !v)
-      }
-    }
-    window.addEventListener('keydown', handleKeyDown)
-    return () => window.removeEventListener('keydown', handleKeyDown)
-  }, [])
 
   return (
     <MotionConfig reducedMotion="user">
-      <Navbar theme={theme} onToggleTheme={toggle} onOpenPalette={() => setPaletteOpen(true)} />
+      <Navbar theme={theme} onToggleTheme={toggle} />
       <main>
         <Hero />
         <AboutGrid />
         <Projects />
         <Contact />
       </main>
-      <CommandPalette
-        isOpen={paletteOpen}
-        onClose={() => setPaletteOpen(false)}
-        theme={theme}
-        onToggleTheme={toggle}
-      />
     </MotionConfig>
   )
 }

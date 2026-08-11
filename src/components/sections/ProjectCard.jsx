@@ -12,9 +12,11 @@ export function ProjectCard({ project }) {
           {project.title.charAt(0)}
         </span>
         <span className="project-number">{project.number}</span>
-        <span className="project-arrow">
-          <ArrowUpRight size={18} />
-        </span>
+        {project.link && (
+          <span className="project-arrow">
+            <ArrowUpRight size={18} />
+          </span>
+        )}
       </div>
       <div className="project-card-body">
         <div className="project-card-heading">

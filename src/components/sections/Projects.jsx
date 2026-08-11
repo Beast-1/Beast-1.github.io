@@ -51,7 +51,7 @@ export function Projects() {
         <RevealOnScroll>
           <div className="projects-header">
             <div>
-              <p className="eyebrow">03 · Selected Work</p>
+              <p className="eyebrow">Selected Work</p>
               <h2 className="section-title">Projects</h2>
             </div>
             <a className="projects-view-all" href={profile.github} target="_blank" rel="noreferrer">

@@ -1,10 +1,10 @@
 import { useState } from 'react'
-import { Command, Download, Menu, X } from 'lucide-react'
+import { Download, Menu, X } from 'lucide-react'
 import { navigation, profile, RESUME_PATH } from '../../data/portfolio'
 import { ThemeToggle } from './ThemeToggle'
 import './Navbar.css'
 
-export function Navbar({ theme, onToggleTheme, onOpenPalette }) {
+export function Navbar({ theme, onToggleTheme }) {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
@@ -23,10 +23,6 @@ export function Navbar({ theme, onToggleTheme, onOpenPalette }) {
         </nav>
 
         <div className="navbar-actions">
-          <button className="navbar-palette-hint" onClick={onOpenPalette} aria-label="Open command palette">
-            <Command size={14} />
-            <span>K</span>
-          </button>
           <a className="navbar-resume" href={RESUME_PATH} download>
             <Download size={14} />
             <span>Résumé</span>

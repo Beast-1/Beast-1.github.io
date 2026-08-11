@@ -71,15 +71,15 @@
   gap: var(--space-3);
 }
 
-.process-icon {
+.process-number {
   flex-shrink: 0;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  width: 34px;
-  height: 34px;
-  border: 1px solid var(--color-border-strong);
-  color: var(--color-accent-bright);
+  width: 2.25rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+  color: var(--color-text-dim);
+  line-height: 1.5;
 }
 
 .process-item-title {
@@ -113,8 +113,10 @@
 }
 
 .quote-signature {
-  font-family: var(--font-script);
-  font-size: 1.6rem;
+  font-family: var(--font-display);
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.15rem;
   margin-bottom: var(--space-5);
 }
 

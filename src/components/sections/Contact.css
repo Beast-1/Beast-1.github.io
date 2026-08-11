@@ -1,13 +1,10 @@
-.contact-grid {
-  display: grid;
-  grid-template-columns: 1.1fr 0.9fr;
-  gap: var(--space-6);
-  align-items: center;
+.contact-inner {
+  max-width: 34rem;
 }
 
 .contact-title {
   font-family: var(--font-display);
-  font-weight: 700;
+  font-weight: 600;
   font-size: var(--fs-h2);
   margin-bottom: var(--space-4);
 }
@@ -15,15 +12,16 @@
 .contact-lede {
   color: var(--color-text-muted);
   max-width: 42ch;
-  margin-bottom: var(--space-5);
+  margin-bottom: var(--space-6);
 }
 
 .contact-rows {
   display: flex;
   flex-direction: column;
-  gap: var(--space-3);
+  gap: var(--space-1);
   align-items: flex-start;
-  margin-bottom: var(--space-5);
+  border-top: 1px solid var(--color-border);
+  padding-top: var(--space-4);
 }
 
 .contact-row {
@@ -31,32 +29,17 @@
   align-items: center;
   gap: var(--space-3);
   padding: var(--space-2) 0;
-  font-size: var(--fs-small);
+  font-size: 1rem;
   color: var(--color-text-muted);
   transition: color var(--duration-fast) var(--ease-out);
 }
 
 .contact-row:hover {
-  color: var(--color-accent-bright);
+  color: var(--color-accent);
 }
 
 .contact-row-static {
   color: var(--color-text-dim);
-}
-
-.contact-availability {
-  display: inline-flex;
-  align-items: center;
-  gap: var(--space-2);
-  padding: var(--space-2) var(--space-4);
-  border: 1px solid var(--color-border-strong);
-  font-family: var(--font-mono);
-  font-size: 0.75rem;
-  color: var(--color-text-muted);
-}
-
-.contact-availability svg {
-  color: var(--color-accent-bright);
 }
 
 .footer {
@@ -74,8 +57,3 @@
   color: var(--color-text-dim);
 }
 
-@media (max-width: 860px) {
-  .contact-grid {
-    grid-template-columns: 1fr;
-  }
-}
