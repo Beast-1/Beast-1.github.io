@@ -1,10 +1,9 @@
 import { useState } from 'react'
 import { Download, Menu, X } from 'lucide-react'
 import { navigation, profile, RESUME_PATH } from '../../data/portfolio'
-import { ThemeToggle } from './ThemeToggle'
 import './Navbar.css'
 
-export function Navbar({ theme, onToggleTheme }) {
+export function Navbar() {
   const [mobileOpen, setMobileOpen] = useState(false)
 
   return (
@@ -27,7 +26,6 @@ export function Navbar({ theme, onToggleTheme }) {
             <Download size={14} />
             <span>Résumé</span>
           </a>
-          <ThemeToggle theme={theme} onToggle={onToggleTheme} />
           <button
             className="navbar-mobile-toggle"
             onClick={() => setMobileOpen((v) => !v)}

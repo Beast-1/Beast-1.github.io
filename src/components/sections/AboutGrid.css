@@ -128,7 +128,7 @@
 }
 
 .quote-cta:hover {
-  background: var(--color-bg);
+  background: var(--color-accent-bright);
   color: #fff;
 }
 

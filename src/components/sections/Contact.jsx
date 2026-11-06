@@ -12,7 +12,6 @@ export function Contact() {
       <div className="container contact-inner">
         <RevealOnScroll>
           <div className="contact-copy">
-            <p className="eyebrow">Contact</p>
             <h2 className="contact-title">Let&apos;s work together.</h2>
             <p className="contact-lede">
               I&apos;m open to new projects and collaborations. Reach out however&apos;s easiest for you.

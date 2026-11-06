@@ -9,7 +9,6 @@ export function AboutGrid() {
       <div className="container about-grid-columns">
         <RevealOnScroll>
           <div className="about-col">
-            <p className="eyebrow">Certifications</p>
             <h2 className="about-col-title">Certifications &amp; Skills</h2>
 
             <ul className="cert-list">
@@ -38,7 +37,6 @@ export function AboutGrid() {
 
         <RevealOnScroll delay={0.1}>
           <div id="process" className="about-col">
-            <p className="eyebrow">Process</p>
             <h2 className="about-col-title">How I Build</h2>
 
             <ol className="process-list">
@@ -60,7 +58,7 @@ export function AboutGrid() {
             <p className="quote-text">&ldquo;{philosophy.text}&rdquo;</p>
             <span className="quote-signature">{profile.name}</span>
             <a className="btn btn-primary quote-cta" href="#contact">
-              Let&apos;s create something together
+              Get in touch
             </a>
           </div>
         </RevealOnScroll>
