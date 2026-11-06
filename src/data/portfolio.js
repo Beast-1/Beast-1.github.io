@@ -3,7 +3,7 @@ export const GITHUB_USERNAME = 'Beast-1'
 export const PHONE_NUMBER = '' // digits only, intl format (e.g. "9779800000000"), fill in for WhatsApp link
 export const CONTACT_EMAIL = 'darpandahal111@gmail.com'
 export const RESUME_PATH = '/resume.pdf'
-export const HERO_PHOTO = '/images/darpan.png'
+export const HERO_PHOTO = '/images/darpan.webp'
 
 export const profile = {
   name: 'Darpan Dahal',
@@ -52,7 +52,7 @@ export const projects = [
       'A property marketplace for Namchi, Sikkim — real backend, real auth, real listings, with a flat commission on every booking. Deployed on Cloudflare Workers; WhatsApp-OTP delivery is wired up and pending a funded Twilio account.',
     tech: ['Cloudflare Workers', 'Supabase', 'WhatsApp OTP'],
     link: 'https://rentire.casuall.workers.dev',
-    image: '/images/projects/rentire.jpg',
+    image: '/images/projects/rentire.webp',
     status: 'In Progress',
   },
   {
@@ -64,7 +64,7 @@ export const projects = [
       'A real-estate platform for Kalimpong with a full SEO pass and its own staff system — admins and assistants invited by phone through a Telegram bot, with approval gates on new listings.',
     tech: ['React', 'SEO', 'Telegram bot'],
     link: 'https://himalayanproperties.co.in',
-    image: '/images/projects/himalayan-properties.jpg',
+    image: '/images/projects/himalayan-properties.webp',
     status: 'Live',
   },
   {
@@ -76,7 +76,7 @@ export const projects = [
       'A local delivery and concierge marketplace for Namchi — food, groceries, pharmacy, household essentials, and a WhatsApp-deep-link "Genie" line for custom errands. Built on TanStack Start, deployed on Cloudflare Workers.',
     tech: ['TanStack Start', 'Supabase', 'Cloudflare Workers'],
     link: 'https://jpani.sikkim-rentire.workers.dev',
-    image: '/images/projects/jpani.jpg',
+    image: '/images/projects/jpani.webp',
     status: 'In Progress',
   },
   {

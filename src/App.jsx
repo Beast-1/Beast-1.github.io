@@ -1,4 +1,3 @@
-import { MotionConfig } from 'framer-motion'
 import { Navbar } from './components/layout/Navbar'
 import { Hero } from './components/sections/Hero'
 import { AboutGrid } from './components/sections/AboutGrid'
@@ -7,7 +6,7 @@ import { Contact } from './components/sections/Contact'
 
 function App() {
   return (
-    <MotionConfig reducedMotion="user">
+    <>
       <Navbar />
       <main>
         <Hero />
@@ -15,7 +14,7 @@ function App() {
         <Projects />
         <Contact />
       </main>
-    </MotionConfig>
+    </>
   )
 }
 
